@@ -18,11 +18,10 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",  // Add this line
     "paths": {
-      "@/*": ["./src/*"],
-        "@components/*": ["app/(site)/(pages)/components/*"]
+      "*": ["node_modules/*", "src/*"]
     }
-    
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
